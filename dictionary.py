@@ -1,6 +1,10 @@
 import json
 from difflib import get_close_matches
 from tkinter import messagebox
+import os
+
+absPath=os.path.dirname(os.path.abspath(__file__))
+#print(absPath + "\dictionary.json")
 
 def CheckError(UserWord):
     MsgBox = messagebox.askquestion ('Typed Incorrectly?','Did you mean %s instead' % UserWord,icon = 'warning')
@@ -11,7 +15,7 @@ def CheckError(UserWord):
         messagebox.showinfo('Oops','Sorry No any match.')
         return "n"
 
-data = json.load(open("dictionary.json"))
+data = json.load(open(absPath + "\\assets\\dictionary.json",'r'))
 
 def dictionary(word):
     word = word.upper()
