@@ -5,3 +5,5 @@
 ### Exe file is created using open source project auto-py-to-exe.
 
 #### Just try it.
+
+![Gui Image](https://github.com/avi-jkiapt/dictionary/blob/master/gui.png)
